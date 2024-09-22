@@ -15,6 +15,7 @@ import NavbarItemsHeader from './NavbarItemsHeader';
 import BrandingHeader from './BrandingHeader';
 import { useContext } from 'react';
 import DarkModeContext from '@/app/providers';
+import WalletButton from './WalletButton';
 
 export default function Header() {
 	const { darkMode } = useContext(DarkModeContext);
@@ -50,18 +51,7 @@ export default function Header() {
 
 			<NavbarContent justify="end">
 				<NavbarItem className="hidden lg:flex">
-					<Link href="/login">Login</Link>
-				</NavbarItem>
-
-				<NavbarItem>
-					<Button
-						as={Link}
-						color="primary"
-						href="/signup"
-						variant="flat"
-					>
-						Sign Up
-					</Button>
+					<WalletButton />
 				</NavbarItem>
 
 				<DarkLightSwitcher />

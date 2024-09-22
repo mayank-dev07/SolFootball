@@ -70,6 +70,7 @@ export default function Home() {
 					/>
 				</div>
 			</div>
+			Unusual Mint (UM)
 		</main>
 	);
 }
